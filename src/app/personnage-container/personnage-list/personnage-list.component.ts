@@ -15,7 +15,6 @@ export class PersonnageListComponent implements OnInit {
 
   public filteractif(actif : boolean){
     this.filtrepersonnages = this.personnages!.filter(pers => pers.active === actif)
-      console.log(this.filtrepersonnages);
       
     
   }
@@ -33,17 +32,14 @@ export class PersonnageListComponent implements OnInit {
   ngOnInit(): void {
 
 
-    console.log(this.personnages)
   
     
   
 }
 
   public deleteOne(id : number , index : number){
-    console.log(id)
      
         this.personnageService.deletePersonnage(id , index).subscribe();
-        this.personnageService.fetchPersonnage().subscribe()
 
       
   }
