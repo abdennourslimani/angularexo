@@ -13,6 +13,8 @@ const routes: Routes = [
     // { path: ":index/edit", component: PersonnageFormComponent },
 
     { path: ":index", component: PersonnageDetailComponent },
+    { path: "", redirectTo: "0", pathMatch: "full" }
+
   ]
 }
 

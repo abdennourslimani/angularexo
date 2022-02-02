@@ -4,7 +4,7 @@
 <button (click) ="nofilter()" class="btn btn-secondary mr-10">all</button>
 
 <ul  class="mb-20 list-primary ">
-	<li class="d-flex flex-justify-content-between"
+	<li routerLinkActive="active" class="d-flex flex-justify-content-between"
 		*ngFor="let personnage of filtrepersonnages ; let index = index">
         <div class="font-cursive">
             name : {{ personnage.name }}
