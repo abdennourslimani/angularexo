@@ -48,12 +48,20 @@ export class PersonnageService {
       .post<Personnage>('http://localhost:3000/characters', personnage)
       .pipe(
         tap((personnage: Personnage) => {
+          console.log(personnage)
           this.personnages$.next([...this.personnages$.value, personnage]);
         })
       );
   }
 
 
+  public deletePersonnage(id : number ,index : number): Observable<Personnage>{
+  return this.http.delete<Personnage>(`http://localhost:3000/characters/${id}`)
+     this.personnages$.pipe(
+      map((personnages: Personnage[]) => personnages[index]),
+      filter(personnage => personnage.id != id)
+
+      )}
 
 
 

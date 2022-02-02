@@ -35,9 +35,10 @@ export class PersonnageFormComponent implements OnInit {
 
 public submit(): void {
 
+  console.log(this.personnageForm.value)
   this.personnageService.addPersonnage(this.personnageForm.value).subscribe();
 
-//  this.router.navigate(['..'], { relativeTo: this.activatedRoute });
+  this.router.navigate(['..'], { relativeTo: this.activatedRoute });
 
 }
 

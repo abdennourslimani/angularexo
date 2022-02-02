@@ -1,6 +1,6 @@
 export interface Personnage {
     title: string,
-    id?: number ,
+    id: number ,
     key: string,
     name: string,
     active?: boolean

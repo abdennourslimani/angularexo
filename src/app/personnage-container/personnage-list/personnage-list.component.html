@@ -2,13 +2,13 @@
 <ul *ngIf="personnages" class="mb-20 list-primary ">
 	<li class="d-flex flex-justify-content-between"
 		*ngFor="let personnage of personnages ; let index = index">
-        <div >
-            {{ personnage.name }}
-
+        <div class="font-cursive">
+            name : {{ personnage.name }}
         </div>
         <div >
-            <button class="btn btn-secondary mr-10">supprimer</button>
-            <button routerLink="new" class="btn btn-primary mr-10">ajouter un personnage</button>
+            <button (click) ="deleteOne(personnage.id , index)" class="btn btn-secondary mr-10">supprimer</button>
+            <button routerLink="new" class="btn btn-primary mr-10">ajouter </button>
+            <button class="btn btn-secondary mr-10"  routerLink="new/edit">edit</button>
             <button class="btn btn-third"  [routerLink]="[index]">details</button>
 
         </div> 
