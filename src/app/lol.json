@@ -1,41 +1,6 @@
 {
   "characters": [
     {
-      "title": "the Spear of Vengeance",
-      "id": 429,
-      "key": "Kalista",
-      "name": "Kalista",
-      "active": true
-    },
-    {
-      "title": "the Void Walker",
-      "id": 38,
-      "key": "Kassadin",
-      "name": "Kassadin",
-      "active": true
-    },
-    {
-      "title": "Maven of the Strings",
-      "id": 37,
-      "key": "Sona",
-      "name": "Sona",
-      "active": true
-    },
-    {
-      "title": "the Machine Herald",
-      "id": 112,
-      "key": "Viktor",
-      "name": "Viktor",
-      "active": true
-    },
-    {
-      "title": "The Charmer",
-      "id": 497,
-      "key": "Rakan",
-      "name": "Rakan",
-      "active": true
-    },
-    {
       "title": "The Eternal Hunters",
       "id": 203,
       "key": "Kindred",
@@ -860,6 +825,13 @@
       "name": "sdsdsds",
       "active": "",
       "id": 540
+    },
+    {
+      "title": "",
+      "key": "",
+      "name": "",
+      "active": "",
+      "id": 541
     }
   ]
 }

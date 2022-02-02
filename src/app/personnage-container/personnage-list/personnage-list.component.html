@@ -1,9 +1,14 @@
 <h3 class="mb-20">Liste des personnages</h3>
-<ul *ngIf="personnages" class="mb-20 list-primary ">
+<button (click) ="filteractif(true)" class="btn btn-secondary mr-10">active</button>
+<button (click) ="filteractif(false)" class="btn btn-secondary mr-10">inactive</button>
+<button (click) ="nofilter()" class="btn btn-secondary mr-10">all</button>
+
+<ul  class="mb-20 list-primary ">
 	<li class="d-flex flex-justify-content-between"
-		*ngFor="let personnage of personnages ; let index = index">
+		*ngFor="let personnage of filtrepersonnages ; let index = index">
         <div class="font-cursive">
             name : {{ personnage.name }}
+            active: {{ personnage.active }}
         </div>
         <div >
             <button (click) ="deleteOne(personnage.id , index)" class="btn btn-secondary mr-10">supprimer</button>

@@ -3,5 +3,5 @@ export interface Personnage {
     id: number ,
     key: string,
     name: string,
-    active?: boolean
+    active: boolean
 }

@@ -27,6 +27,12 @@ export class PersonnageService {
     );
   }
 
+
+
+
+
+
+
   /**
    * 
    * @param index  recuperer un personnage on passe le flux dans un pipe ensuite on filtre 
@@ -60,7 +66,6 @@ export class PersonnageService {
      this.personnages$.pipe(
       map((personnages: Personnage[]) => personnages[index]),
       filter(personnage => personnage.id != id)
-
       )}
 
 
